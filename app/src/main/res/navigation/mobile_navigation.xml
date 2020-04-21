@@ -3,41 +3,35 @@
             xmlns:app="http://schemas.android.com/apk/res-auto"
             xmlns:tools="http://schemas.android.com/tools"
             android:id="@+id/mobile_navigation"
-            app:startDestination="@+id/nav_home">
+            app:startDestination="@+id/nav_main">
 
     <fragment
-            android:id="@+id/nav_home"
-            android:name="com.example.mobfinalmenuplusnavbar.ui.home.HomeFragment"
-            android:label="@string/menu_home"
-            tools:layout="@layout/fragment_home">
-
-        <action
-                android:id="@+id/action_HomeFragment_to_HomeSecondFragment"
-                app:destination="@id/nav_home_second"/>
-    </fragment>
-    <fragment
-            android:id="@+id/nav_home_second"
-            android:name="com.example.mobfinalmenuplusnavbar.ui.home.HomeSecondFragment"
-            android:label="@string/home_second"
-            tools:layout="@layout/fragment_home_second">
-        <action
-                android:id="@+id/action_HomeSecondFragment_to_HomeFragment"
-                app:destination="@id/nav_home"/>
-
-        <argument
-                android:name="myArg"
-                app:argType="string"/>
-    </fragment>
+            android:id="@+id/nav_main"
+            android:name="com.example.mobfinalmenuplusnavbar.ui.main.MainFragment"
+            android:label="@string/menu_main"
+            tools:layout="@layout/fragment_main"/>
 
     <fragment
-            android:id="@+id/nav_gallery"
-            android:name="com.example.mobfinalmenuplusnavbar.ui.gallery.GalleryFragment"
-            android:label="@string/menu_gallery"
-            tools:layout="@layout/fragment_gallery"/>
+            android:id="@+id/nav_history"
+            android:name="com.example.mobfinalmenuplusnavbar.ui.history.HistoryFragment"
+            android:label="@string/menu_history"
+            tools:layout="@layout/fragment_history"/>
 
     <fragment
-            android:id="@+id/nav_slideshow"
-            android:name="com.example.mobfinalmenuplusnavbar.ui.slideshow.SlideshowFragment"
-            android:label="@string/menu_slideshow"
-            tools:layout="@layout/fragment_slideshow"/>
+            android:id="@+id/nav_debts"
+            android:name="com.example.mobfinalmenuplusnavbar.ui.debts.DebtsFragment"
+            android:label="@string/menu_debts"
+            tools:layout="@layout/fragment_debts"/>
+
+    <fragment
+            android:id="@+id/nav_plan"
+            android:name="com.example.mobfinalmenuplusnavbar.ui.plan.PlanFragment"
+            android:label="@string/menu_plan"
+            tools:layout="@layout/fragment_plan"/>
+
+    <fragment
+            android:id="@+id/nav_analytics"
+            android:name="com.example.mobfinalmenuplusnavbar.ui.analytics.AnalyticsFragment"
+            android:label="@string/menu_analytics"
+            tools:layout="@layout/fragment_analytics"/>
 </navigation>

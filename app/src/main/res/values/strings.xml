@@ -7,9 +7,11 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
 
-    <string name="menu_home">Home</string>
-    <string name="menu_gallery">Gallery</string>
-    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_main">Main</string>
+    <string name="menu_history">History</string>
+    <string name="menu_debts">Debts</string>
+    <string name="menu_plan">Plan</string>
+    <string name="menu_analytics">Analytics</string>
 
     <string name="home_second">Home Second</string>
     <string name="next">Next</string>
